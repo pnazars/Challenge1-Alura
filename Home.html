@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./Stylefolder/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logoAlura" src="./images/Logo.png">
+    </header>
+    <main class="main">
+        <div class="seccioningresodatos">
+            <a class="ingresetexto" >
+                <textarea id="textousuario" class="ingresetexto">Ingrese el texto aqui</textarea >
+            </a>
+
+            <div class="informacion">
+                <img src="./images/Info.png" alt="signo información"> 
+                <h3>Solo letras minúsculas y sin acentos</h3>
+            </div>
+            <div class="botones">
+                <button onclick="ingresotexto();" class="botonencriptar"> Encriptar</button>
+                <button onclick="ingresotextoencriptado();" class="botondesencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="seccionresultados">
+            <a class="columnatraduccion">
+                <img id="muñeco" class="muñeco" src="./images/Muñeco.png">
+            <h2 id="mensajeerror" class="mensajeerror">Ningún mensaje fue encontrado</h2>
+            <p  id="titulotraducido" class="titulotraducido">Ingresa el texto que desees encriptar o desencriptar.</p>    
+            </a>
+        </div>    
+
+    </main>
+    
+    <script src="app.js" defer></script>   
+</body>
+<footer class="footer">
+    <h4>Desarrollado por Paola Nazar 2024</h4>
+</footer>
+</html>

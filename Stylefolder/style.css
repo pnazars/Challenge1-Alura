@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-fondo: #F3F5FC;
+    --color-letras: #0A3871;
+    --color-error: #343A40;
+    --color-traduccion: #495057;
+
+
+    --fuente-inter: 'Inter', sans serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}    
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    box-sizing: border-box;
+    padding: auto;
+    
+}
+
+
+.header{
+    padding: 2% 0% 0% 2%;
+}
+
+.main{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0% 0% 0% 7%;
+}
+
+
+.seccioningresodatos{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+}
+
+
+.ingresetexto{
+    display: flex;
+    height: 50%;
+    width: 80%;
+    font-family: var(--fuente-inter);
+    color: var(--color-letras);
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 5%;
+    padding-left: 2%;
+    background-color: var(--color-fondo);
+    border: none;
+    text-align:initial;
+    resize: none;
+
+}
+
+.seccionresultados{
+    display: flex;
+    width: 20%;
+    justify-content: right;
+    padding: 0% 0% 5% 0%;
+}
+
+.columnatraduccion{
+    width: 600px;
+    height: 830px;
+    text-align: center;
+    border-radius: 32px;
+    border: 2px solid white;
+    background-color: white;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-error);
+
+    
+}
+
+.muñeco{
+    width: 80%;
+    padding-top: 50% ;
+    padding-bottom: 10%;
+}
+
+.mensajeerror{
+    width: 80%;
+    padding-left: 10%;
+    font-size: 1.5rem;
+}
+
+.titulotraducido{
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color:#495057;
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    height: 20%;
+    padding: 5% 0% 0% 5%;
+}
+
+.informacion{
+    font-size: 0.75rem;
+    font-family: var(--fuente-inter);
+    font-weight: 100;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px ;
+    padding-left: 2%;
+    
+}
+
+.botones{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 2% 0% 0% 2%;
+    
+
+}
+
+
+
+.botonencriptar{
+    text-align: center;
+    padding: 20px 100px;
+    border-radius: 24px;
+    border: 2px solid var(--color-error);
+    background-color: var(--color-letras);
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    gap:0px;
+}
+
+.botonencriptar:hover{
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.botonencriptar:active {
+    transform: scale(0.98); /* Le da un efecto de "presionado" */
+}
+
+
+.botondesencriptar{
+    text-align: center;
+    padding: 20px 100px;
+    border-radius: 24px;
+    border: 1px solid var(--color-letras);
+    background-color: #d8dfe8;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-letras);
+    display: flex;
+    justify-content: center;
+    gap:0px;
+    
+}
+
+.botondesencriptar:hover{
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.botondesencriptar:active {
+    transform: scale(0.98); /* Le da un efecto de "presionado" */
+}
+
+
+.footer{
+    background-color: var(--color-letras);
+    padding: 20px;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color: #d8dfe8;
+    text-align: center;
+}
+
+.parrafoingresado{
+    display: flex;
+    height: 50%;
+    width: 80%;
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 5%;
+    padding-left: 2%;
+
+}
+
+.textotraducido{
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    color:#495057;
+    font-weight: 400;
+    width: 90%;
+    text-align: left;
+    height: 100%;
+    padding: 20% 0% 0% 5%;
+}
+
+/*.botoncopiar{
+    text-align: center;
+    padding: 20px 100px;
+    border-radius: 24px;
+    border: 1px solid var(--color-letras);
+    background-color: white;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-letras);
+    display: flex;
+    justify-content: center;
+    gap:0px;
+} */ 
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .header{
+        padding: 5%;
+    }
+
+    .ingresetexto {
+        width: auto;
+    }
+
+    .botonencriptar {
+        padding: 5% 30% 5% 30%;
+    }
+
+    .botondesencriptar {
+        padding: 5% 30% 5% 30%;
+    }
+
+    .seccionresultados{
+        display: flex;
+        width: 68%;
+        justify-content: center;
+        padding: 7% 0% 0% 10%;
+    }
+    
+
+    .main{
+        flex-direction: column; 
+        align-items: right;  
+        padding-bottom: 100%;   
+    }
+
+    .columnatraduccion{
+        display: flex;
+        height: auto;
+        text-align: start;
+        color: var(--color-error);
+        flex-direction: column;
+        
+    }
+
+    .muñeco{
+        
+        display: none;
+    }
+    .mensajeerror{
+        width: 80%;
+        padding-left: 10%;
+        font-size: 1.5rem;
+        align-items: start;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .titulotraducido{
+        font-family: var(--fuente-inter);
+        font-size: 1rem;
+        color:#495057;
+        font-weight: 400;
+        text-align: center;
+        height: 20%;
+        padding: 5% 0% 10% 5%;
+        margin-top: 0%;
+    }
+    .footer{
+        display: flexbox;
+        align-content: end;
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header{
+        padding: 5%;
+    }
+
+    .ingresetexto {
+        width: auto;
+    }
+
+    .botones {
+        gap: 5%;
+    }
+
+    .botonencriptar {
+        padding: 5% 20% 5% 20%;
+    }
+
+    .botondesencriptar {
+        padding: 5% 20% 5% 20%;
+    }
+
+    .seccionresultados{
+        display: flex;
+        width: 68%;
+        justify-content: center;
+        padding: 7% 0% 0% 10%;
+    }
+    
+
+    .main{
+        flex-direction: column; 
+        align-items: right;  
+        padding-bottom: 54%;   
+    }
+
+    .columnatraduccion{
+        display: flex;
+        height: auto;
+        text-align: start;
+        color: var(--color-error);
+        flex-direction: column;
+        
+    }
+
+    .muñeco{
+        
+        display: none;
+    }
+    .mensajeerror{
+        width: 80%;
+        padding-left: 10%;
+        font-size: 1.5rem;
+        align-items: start;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .titulotraducido{
+        font-family: var(--fuente-inter);
+        font-size: 1rem;
+        color:#495057;
+        font-weight: 400;
+        text-align: center;
+        height: 20%;
+        padding: 5% 0% 10% 5%;
+        margin-top: 0%;
+    }
+    .footer{
+        display: flexbox;
+        align-content: end;
+        text-align: center;
+
+    }
+
+    .seccioningresodatos {
+        width: fit-content;
+    }
+}
